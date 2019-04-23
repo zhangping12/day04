@@ -29,12 +29,17 @@
          arr1 = [19, 1, 20, 5];
          arr1.sort(sortNumber);//排序，排序的时候一定要传入排序的方法
 
-         function sortNumber(num1, num2) {
+         function sortNumber(num1, num2) { //升序排序
             return num1 - num2;
         }
+         function sortNumber(num1, num2) { //降序排序
+            return num2 - num1;
+        }
+         若 a 小于 b，即 a - b 小于零，则返回一个小于零的值，数组将按照升序排列。
+         若 a 等于 b，则返回 0。
+         若 a 大于 b, 即 a - b 大于零，则返回一个大于零的值，数组将按照降序排列。
 
          */
-
         arr1.splice(1,1,"张三","李四","王五");//第一个参数是开始删除元素的索引值，
                                              // 第二个参数是删除元素的个数，往后的数据就是插入的元素。
 
